@@ -17,23 +17,6 @@ function App() {
       const NASA_KEY = import.meta.env.VITE_NASA_API_KEY
       const url = 'https://api.nasa.gov/planetary/apod' + `?api_key=${NASA_KEY}`
 
-      console.log("NASA KEY:", NASA_KEY)
-      console.log("URL:", url)
-
-              
-      try {
-          const res = await fetch(url)
-          console.log("STATUS:", res.status)
-
-          const apiData = await res.json()
-          console.log("API DATA:", apiData)
-       }
-        catch (err) 
-        {
-          console.log("ERROR:", err)
-        }
-
-
       const today = (new Date()).toDateString()
       const localKey = `NASA-${today}`
       if (localStorage.getItem(localKey)) {

@@ -1,8 +1,6 @@
 export default function Main(props) {
     const { data } = props
 
-    console.log("Sherin:", data)  // <-- Works!
-
     return (
         <div className="imgContainer">
             <img 
