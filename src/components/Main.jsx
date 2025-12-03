@@ -3,6 +3,7 @@ export default function Main(props) {
 
     return (
         <div className="imgContainer">
+            {/* Display NASA APOD image */}
             <img 
                 src={data.hdurl || data.url}
                 alt={data.title || "bg-img"}

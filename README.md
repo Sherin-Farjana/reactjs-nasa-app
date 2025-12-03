@@ -1,16 +1,79 @@
-# React + Vite
+# APOD Project - NASA Astronomy Picture of the Day Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive **NASA APOD (Astronomy Picture of the Day) web app** built using **React, JavaScript, and CSS**, designed to fetch and display NASA’s daily astronomy image with details and a sidebar for extra information.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## React Compiler
+**https://sherin-reactjs-nasa-app.netlify.app/**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**NASA APOD Viewer** is a **single-page React application** that fetches the daily astronomy image from NASA’s public API and presents it with a clean, responsive interface.
+
+The app includes:
+
+- Fetches **NASA’s APOD** dynamically using their public API
+- **Displays high-resolution images** with title and description
+- **Sidebar modal** with date and detailed explanation
+- **Footer with quick info** and toggle button
+- **Persistent caching** using `localStorage` to reduce API calls
+- Responsive design for desktops and mobile devices
+
+---
+
+## Features
+
+- Built using **React + Vite**
+- Fetches daily data from the **NASA APOD API**
+- Caches daily results to reduce API calls
+- Responsive sidebar with explanation text
+- Minimal, modern UI styling
+- Loading indicator for smooth experience
+
+---
+
+## Tech Stack
+
+| Technology           | Purpose                       |
+| -------------------- | ----------------------------- |
+| **React (vite)**     | Frontend framework            |
+| **Javascript(ES6+)** | Logic & API handling          |
+| **CSS3**             | Styling and responsive layout |
+| **NASA APOD API**    | Astronomy image data          |
+| **Font Awesome**     | UI icons                      |
+
+---
+
+## Project Structure
+
+```
+
+REACTJS-NASA-APP/
+│
+├── src/
+│   ├── App.jsx           # Main application logic
+│   ├── main.jsx          # React entry point
+│   ├── components/
+│   │   ├── Main.jsx      # Renders APOD image
+│   │   ├── Footer.jsx    # Footer with title + info button
+│   │   └── SideBar.jsx   # Slide-in details panel
+│   └── index.css         # Global styles
+│
+├── index.html            # Root HTML file
+├── .env                  # NASA API KEY
+└── README.md             # Documentation
+
+```
+
+## Author
+
+**Sherin Farjana**  
+💼 Front End Developer | Specializing in C, C++, OpenGL, and Web Technologies  
+🔗 [LinkedIn](https://www.linkedin.com/in/sherin-farjana)  
+🔗 [GitHub](https://github.com/Sherin-Farjana)
+
+---

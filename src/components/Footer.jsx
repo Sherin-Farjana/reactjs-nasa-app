@@ -1,9 +1,9 @@
 export default function Footer(props) {
-    const { showModal, handleToggleModal, data } = props
+    const { handleToggleModal, data } = props
 
     return (
         <footer>
-            <div className="bgGradient"></div>
+            <div className="bgGradient"></div>  {/* Background gradient */}
             <div>
                 <h1>APOD PROJECT</h1>
                 <h2>{data?.title}</h2>
